@@ -16,7 +16,7 @@ app.use(express.static('./public'));
 
 const start = async ()=> {
     try {
-        await connectDB(mongodb+srv://adilAkothiat:Marocaines_12345@nodejsproject.zsafb.mongodb.net/task-manager?retryWrites=true&w=majority);
+        await connectDB('mongodb+srv://adilAkothiat:Marocaines_12345@nodejsproject.zsafb.mongodb.net/task-manager?retryWrites=true&w=majority');
         app.listen(port, host, function() {
             console.log('server started...');
         });
