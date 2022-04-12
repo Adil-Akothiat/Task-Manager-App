@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #F5F5F5;
+    font-family: monospace;
+    color: #232323;
+}
+
+main {
+    width: 80%;
+    margin: 2rem auto;
+}
+section {
+    width: 800px;
+    margin: 5rem auto;
+}
+.head_task {
+    text-align: center;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 4rem;
+    box-shadow: 0px 0px 10px -11px #232323;
+}
+
+.head_task form {
+    display: flex;
+}
+.head_task h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.7rem;
+}
+.head_task input {
+    width: 75%;
+    justify-content: center;
+    background-color: rgb(230, 230, 230);
+    border: none;
+    height: 2.5rem;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    padding: 0 1rem;
+    font-size: 1.32rem;
+}
+.head_task button {
+    width: 25%;
+    background-color: tomato;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    opacity: 0.78;
+    transition: all 330ms ease;
+    font-size: 1.18rem;
+}
+.head_task button:hover {
+    opacity: 1;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px -11px #232323;
+}
+
+
+.task >div {
+    display: flex;
+    align-items: center;
+}
+.task >div p {
+    margin-left: 1rem;
+    font-size: 1.25rem;
+}
+.task >div+div {
+    display: flex;
+    align-items: center;
+}
+
+.task >div+div>a>img {
+    margin-right: 1rem;
+}
+.task img {
+    width: 20px;
+    object-fit: cover;
+}
+
+.main_edit {
+    width: 600px;
+    margin: 5rem auto;
+}
+.edit_task {
+    background-color: #FFF;
+    padding: 3rem 2rem;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+.edit_task h1 {
+    font-size: 1.85rem;
+    text-align: center;
+}
+.edit_task >div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.edit_task span,
+.edit_task input {
+    display: block;
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+}
+
+.proper {
+    width: 20%;
+}
+.prop_value {
+    width: 68%;
+}
+
+#task {
+    width: 100%;
+    padding: 2.5px 1rem;
+    border: none;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    outline-color: rgb(38, 128, 184);
+}
+
+.edit {
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+    background-color: tomato;
+    color: #FFF;
+    border: none;
+    padding: 5px 0;
+    border-radius: 5px;
+    opacity: 0.78;
+    transition: all 330ms ease;
+    cursor: pointer;
+}
+.edit:hover {
+    opacity: 1;
+}
+
+.back {
+    display: block;
+    width: 180px;
+    margin: 4rem auto;
+    padding: 6px 0;
+    cursor: pointer;
+    background-color: #232323;
+    border: none;
+    border-radius: 5px;
+    opacity: .78;
+    transition: all 330ms ease;
+}
+.back a {
+    color: #FFF;
+    font-size: 1.18rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.back:hover {
+    opacity: 1;
+}
+
+.alert_edit {
+    height: 5vh;
+}
+
+#edit_succ,
+#edit_fail {
+    font-size: 1.1rem;
+    display: block;
+    width: 300px;
+    padding: 5px 2rem;
+    margin: 1.5rem auto 0 auto;
+    border-radius: 5px;
+}
+#edit_succ {
+    color: rgb(42, 170, 27);
+    background-color: rgb(204, 255, 204);
+}
+#edit_fail {
+    color: rgb(226, 87, 87);
+    background-color: rgb(255, 205, 205);
+}
+.delet {
+    cursor: pointer;
+}
+.alert_task {
+    margin-top: 3rem;
+}
+#alert_tsu,
+#alert_tfa {
+    padding: 5px 10px;
+    font-size: 1.2rem;
+}
+
+#alert_tsu {
+    color: rgb(42, 170, 27);
+    background-color: rgb(204, 255, 204);
+}
+#alert_tfa {
+    color: rgb(226, 87, 87);
+    background-color: rgb(255, 205, 205);
+}
+
+
+@media screen and (max-width: 200px) {
+    body {
+        min-width: 500px;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    main {
+        width: 95%;
+    }
+    section {
+        width: 100%;
+        padding: 0;
+    }
+    .head_task h1 {
+        font-size: 1rem;
+    }
+    .head_task {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+    .head_task input {
+        width: 100%;
+        font-size: 1rem;
+    }
+    .head_task button {
+        width: 30%;
+        font-size: 0.6rem;
+    }
+    .task >div p {
+        font-size: 0.8rem;
+        word-wrap: break-word;
+    }
+    .task div img {
+        width: 10px;
+    }
+
+    .edit_task h1 {
+        font-size: 1.18rem;
+    }
+    .main_edit {
+        width: 100%;
+    }
+    .main_edit span {
+        font-size: 0.7rem;
+    }
+    .proper {
+        height: 100%;
+    }
+    .prop_value {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    main {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main_edit {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .head_task h1{
+        font-size: 1.5rem;
+    }
+    .head_task input {
+        font-size: 1.25rem;
+    }
+    .head_task button {
+        font-size: 1.1rem;
+    }
+
+    .task >div p {
+        font-size: 1.18rem;
+    }
+    .task div img {
+        width: 18px;
+    }
+
+
+
+    .edit_task h1 {
+        font-size: 1.45rem;
+    }
+    .edit_task span {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main_edit {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .edit_task h1 {
+        font-size: 1.45rem;
+    }
+    .edit_task span {
+        font-size: 1.2rem;
+    }
+    .head_task h1{
+        font-size: 1.5rem;
+    }
+    .head_task input {
+        font-size: 1.35rem;
+    }
+    .head_task button {
+        font-size: 1.2rem;
+    }
+
+    .task >div p {
+        font-size: 1.38rem;
+    }
+    .task div img {
+        width: 25px;
+    }
+    .main_edit span {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+    .main_edit h1 {
+        font-size: 1.85rem;
+    }
+    .main_edit button {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .head_task {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    .main_edit {
+        width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

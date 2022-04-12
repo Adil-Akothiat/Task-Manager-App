@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <main class="main_edit">
+        <div class="edit_task">
+            <h1>
+                edit tasks
+            </h1>
+            <div>
+                <div class="proper">
+                    <span>
+                        task id
+                    </span>
+                    <span>
+                        name
+                    </span>
+                    <span>
+                        completed
+                    </span>
+                </div>
+                <div class="prop_value">
+                    <span id="id_span">
+
+                    </span>
+                    <input type="text" name="task" id="task">
+                    <input type="checkbox" name="completed" id="completed">
+                </div>
+            </div>
+            <button class="edit">
+                edit
+            </button>
+            <div class="alert_edit">
+                
+            </div>
+        </div>
+        <div>
+            <button class="back">
+                <a href="./index.html">
+                    back to tasks
+                </a>
+            </button>
+        </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./edit_task.js"></script>
+</body>
+</html>
